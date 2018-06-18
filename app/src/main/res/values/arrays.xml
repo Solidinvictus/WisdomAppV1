@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="idiomas_array">Español a Inglés
+        <item>Español a Inglés</item>
+        <item>Inglés a Español</item>
+        <item>Español a Francés</item>
+    </string-array>
+
+    <string-array name="color">
+        <item>MORADO</item>
+        <item>NEGRO</item>
+        <item>BLANCO</item>
+    </string-array>
+
+    <string-array name="codigoColor">
+        <item>MORADO</item>
+        <item>NEGRO</item>
+        <item>BLANCO</item>
+    </string-array>
+</resources>

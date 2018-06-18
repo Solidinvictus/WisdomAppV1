@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Preferencias">
+
+    <PreferenceCategory android:title="Principal">
+
+        <CheckBoxPreference
+            android:key="presentacionCheckBox"
+            android:summary="Omitir pantalla de presentacion"
+            android:title="Pantalla de Carga" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Diseño">
+        <ListPreference
+            android:entries="@array/color"
+            android:entryValues="@array/codigoColor"
+            android:key="listaColor"
+            android:summary="Seleccione un estilo de color"
+            android:title="Color de ventanas" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Acerca De">
+        <Preference
+            android:icon="@drawable/info"
+            android:key="acercaDe"
+            android:title="Realizado por Ali Smili" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

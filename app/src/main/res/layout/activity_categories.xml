@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="37dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/opcionesicon" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_idioma_seleccionado"
+        app:layout_constraintStart_toEndOf="@+id/spinnerOptions"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/spinnerIdiomas"
+        android:layout_width="36dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/spinnerOptions"
+        android:layout_width="30dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTemas"
+        android:layout_width="450dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="SELECCIÓN CATEGORíAS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemas">
+
+        <LinearLayout
+            android:id="@+id/layout_botones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_colores"
+                style="@style/Style_one_buttons"
+                android:text="COLORES" />
+
+            <Button
+                android:id="@+id/btn_naturaleza"
+                style="@style/Style_one_buttons"
+                android:text="NATURALEZA" />
+
+            <Button
+                android:id="@+id/btn_lugares"
+                style="@style/Style_one_buttons"
+                android:text="LUGARES" />
+
+            <Button
+                android:id="@+id/btn_tiempo"
+                style="@style/Style_one_buttons"
+                android:text="TIEMPO" />
+
+            <Button
+                android:id="@+id/btn_comida"
+                style="@style/Style_one_buttons"
+                android:text="COMIDA" />
+
+            <Button
+                android:id="@+id/btn_transporte"
+                style="@style/Style_one_buttons"
+                android:text="TRANSPORTE" />
+
+            <Button
+                android:id="@+id/btn_animales"
+                style="@style/Style_one_buttons"
+                android:text="ANIMALES" />
+
+            <Button
+                android:id="@+id/btn_materiales"
+                style="@style/Style_one_buttons"
+                android:text="MATERIALES" />
+
+            <Button
+                android:id="@+id/btn_salud"
+                style="@style/Style_one_buttons"
+                android:text="SALUD" />
+
+            <!-- marginBotton necesario para dar efecto gráfico de que acaba la lista-->
+            <Button
+                android:id="@+id/btn_personales"
+                style="@style/Style_two_buttons"
+                android:layout_marginBottom="16dp"
+                android:text="MI BAÚL*"
+                android:background="#FF66CC"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txt_idioma_seleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ESP/ENG"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerIdiomas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

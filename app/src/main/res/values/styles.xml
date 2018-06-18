@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme_blanco" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#888888</item>
+        <item name="colorAccent">#F00000</item>
+    </style>
+
+    <style name="AppTheme_negro" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#444444</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#BBBBBB</item>
+    </style>
+
+    <style name="AppTheme_NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="Style_one_buttons">
+        <item name="android:layout_height">54dp</item>
+        <item name = "android:layout_width">match_parent</item>
+        <item name = "android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textStyle">bold</item>
+        <item name ="android:textColor">#FFFFFF</item>
+        <item name = "android:background">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="Style_two_buttons">
+        <item name="android:layout_height">54dp</item>
+        <item name = "android:layout_width">match_parent</item>
+        <item name = "android:textAlignment">center</item>
+        <item name = "android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textStyle">bold</item>
+        <item name ="android:textColor">#FFFFFF</item>
+        <item name = "android:background">@color/colorPrimaryLight</item>
+
+    </style>
+</resources>
+

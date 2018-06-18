@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:actionLayout="@layout/activity_categories">
+
+    <item
+        android:id="@+id/item_menuTopbar1"
+        android:title="@string/topbarItem1"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item_menuTopbar2"
+        android:title="@string/topbarItem2"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item_menuTopbar3"
+        android:title="@string/topbarItem3"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+</menu>
